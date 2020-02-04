@@ -4,6 +4,11 @@ body {
     font-size: 16px;
     text-align: left;
 }
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
 .center {
     text-align: center;
 }
@@ -25,10 +30,26 @@ body {
 }
 .title h1 {
     color: #ffffff;
+    max-width: 706px;
+    margin: 0 auto;
     font-size: 45px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
+}
+.element {
+    width: 2px;
+    height: 100px;
+    background-color: #30a3f0;
+    margin: 0 auto;
+}
+.element-top {
+    margin-top: 220px;
+    margin-bottom: 28px;
+}
+.element-bottom {
+    margin-top: 31px;
+    margin-bottom: 41px;
 }
 .btn {
     color: #30a3f0;
@@ -36,12 +57,18 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.4px;
+    text-decoration: none;
+    border: 1px solid #30a3f0;
+    border-radius: 5px;
+    padding: 21px 43px 19px 42px;
+    margin: 0 auto;
 }
 .box-item h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #222222;
+    margin-bottom: 28px;
 }
 .title-h2 {
     font-family: 'Raleway', sans-serif;
