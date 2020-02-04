@@ -1,5 +1,15 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
 .info-item, .info-link{
-    color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
 }
 .nav-link {
     color: #444444;
@@ -9,10 +19,46 @@
 }
 .title p {
     color: #30a3f0;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 .title h1 {
     color: #ffffff;
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 .btn {
     color: #30a3f0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+.box-item h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #222222;
+}
+.title-h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #222222;
+    text-transform: uppercase;
+}
+.title-h2 span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #30a3f0;
+    text-transform: none;
+}
+.description {
+    color: #707070;
+}
+.list-description {
+    color: #222222;
 }
