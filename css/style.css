@@ -6,8 +6,8 @@ body {
 }
 .header {
     padding-bottom: 213px;
-    padding-top: 31px;
-    background-color: grey;
+    padding-top: 30px;
+    background-image: url(../img/bg.jpg);
 }
 .wrapper {
     width: 100%;
@@ -21,12 +21,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 .info {
     display: flex;
     padding-left: 0;
     list-style-type: none;
     align-items: center;
+    margin: 0;
 }
 .info-item, .info-link {
     color: rgba(255, 255, 255, 0.3);
@@ -41,6 +43,9 @@ body {
 .info-link {
     text-decoration: none;
 }
+.info-link:hover {
+    color: #30a3f0;
+}
 .head {
     background-color: #ffffff;
     display: flex;
@@ -48,6 +53,7 @@ body {
     justify-content: space-between;
     padding: 26px 40px 25px;
     margin-bottom: 120px;
+    margin-top: 25px;
 }
 .nav {
     display: flex;
@@ -71,9 +77,6 @@ body {
 }
 .nav-link:hover {
     color: #30a3f0;
-    border: 1px solid #30a3f0;
-    border-radius: 5px;
-
 }
 .nav button {
     margin-left: 20px;
@@ -83,10 +86,12 @@ body {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    margin: 0 auto 4px;
 }
 .title h1 {
     color: #ffffff;
     max-width: 706px;
+    line-height: 60px;
     margin: 0 auto;
     font-size: 45px;
     font-family: 'Raleway', sans-serif;
@@ -104,7 +109,7 @@ body {
     margin-bottom: 28px;
 }
 .element-bottom {
-    margin-top: 31px;
+    margin-top: 17px; /* 31-14*/
     margin-bottom: 41px;
 }
 .btn {
@@ -118,6 +123,10 @@ body {
     border-radius: 5px;
     padding: 21px 43px 19px 42px;
     margin: 0 auto;
+}
+.btn:hover {
+    background-color: #30a3f0;
+    color: #ffffff;
 }
 .page-line  {
     border-bottom: 1px solid #e4e4e4;
@@ -153,7 +162,15 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #30a3f0;
-    text-transform: none;
+    text-transform: initial;
+    display: block;
+    margin-bottom: 18px;
+}
+.line {
+    width: 52px;
+    height: 14px;
+    background-image: url(../img/line.png);
+    display: block;
 }
 .description {
     color: #707070;
