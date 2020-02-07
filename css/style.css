@@ -38,13 +38,22 @@ body {
     margin-right: 29px;
 }
 .info-right .info-item {
-    margin-left: 17px;
+    margin-left: 6px;
 }
 .info-link {
     text-decoration: none;
 }
 .info-link:hover {
     color: #30a3f0;
+}
+.info-link svg {
+    color: #30a3f0;
+    margin-right: 9px;
+}
+.register::before {
+    content: "/";
+    margin-right: 6px;
+
 }
 .head {
     background-color: #ffffff;
@@ -55,6 +64,9 @@ body {
     margin-bottom: 120px;
     margin-top: 25px;
 }
+.logo {
+    width: 158px;
+}
 .nav {
     display: flex;
     padding-left: 0;
@@ -62,6 +74,9 @@ body {
 }
 .nav-item {
     margin-left: 7px;
+}
+.nav-item-btn {
+    margin-left: 20px;
 }
 .nav-link {
     color: #444444;
@@ -78,8 +93,16 @@ body {
 .nav-link:hover {
     color: #30a3f0;
 }
-.nav button {
-    margin-left: 20px;
+.nav-btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+.nav-btn svg{
+    color: #444444;
+}
+.nav-btn svg:hover {
+    color: #30a3f0;
 }
 .title p {
     color: #30a3f0;
