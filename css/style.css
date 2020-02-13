@@ -213,6 +213,8 @@ body {
     font-size: 30px;
     color: #222222;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .title-h2 span {
     font-weight: 400;
@@ -225,12 +227,20 @@ body {
 .line {
     width: 52px;
     height: 14px;
-    background-image: url(../img/line.png);
+    background-image: url(../img/line.svg);
     display: block;
+    margin-top: 19px;
+    margin-bottom: 41px;
 }
 .description {
     color: #707070;
-    /* margin-bottom: 40px; */
+    line-height: 25.99px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.page-grey .description {
+    max-width: 676px;
+    margin: 0 auto;
 }
 .list-description {
     color: #222222;
@@ -283,4 +293,96 @@ body {
     background-image: url(../img/mockup.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
+.line-center {
+    width: 91px;
+    height: 14px;
+    background-image: url(../img/line-center.svg);
+    display: block;
+    margin: 13px auto 32px;
+}
+.photo {
+    display: flex;
+}
+.photo-item {
+    overflow: hidden;
+    flex-basis: 20%;
+    position: relative;
+    height: 350px;
+}
+.photo-item img {
+    width: 100%; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    height: 350px;
+     /*  чтобы картинки сдвигались пропорционально нужно поставить 100%*/
+    z-index: -1;
+}
+.photo-active {
+    display: none;
+}
+.photo-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: calc(50% - 29px);
+    display: none; 
+}
+.photo-text h3{
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+.photo-text p{
+    color: #707070;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.photo-btn {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+.photo-btn-item {
+    flex-basis: 50%;   
+    padding: 22px 22px 22px 22px;
+    border-right: 1px solid #30a3f0;
+    background-color: #ffffff;
+}
+.photo-btn-link {
+    font-size: 16px;
+    color: #222222;
+    font-weight: 400;
+    text-decoration: none;
+}
+.fa-link {
+    transform: scale(1, -1);
+}
+.photo-item:hover {
+    background-color: rgba(34, 34, 34, 0.8);
+}
+.photo-item:hover .photo-text {
+    display: block;
+}
+.photo-item:hover .photo-btn {
+    display: flex;
+}
+.photo-btn-item:hover {
+    background-color: #30a3f0;
+}
+.photo-btn-item:hover .photo-btn-link {
+    color: #ffffff;
 }
