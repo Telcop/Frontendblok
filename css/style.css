@@ -111,7 +111,7 @@ body {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    margin: 0 auto 4px;
+    margin: 0 auto 10px;
 }
 .title h1 {
     color: #ffffff;
@@ -134,10 +134,15 @@ body {
     margin-bottom: 28px;
 }
 .element-bottom {
-    margin-top: 17px; /* 31-14*/
-    margin-bottom: 41px;
+    margin-top: 24px; /* 31-7*/
+    margin-bottom: 62px;
+}
+p.center {
+    margin: 0;
+    line-height: 1;
 }
 .btn {
+    display: inline-block;
     color: #30a3f0;
     font-size: 14px;
     font-weight: 700;
@@ -148,6 +153,7 @@ body {
     border-radius: 5px;
     padding: 21px 43px 19px 42px;
     margin: 0 auto;
+    transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.2s linear;
 }
 .btn:hover {
     background-color: #30a3f0;
@@ -185,6 +191,7 @@ body {
     background-repeat: no-repeat;
     padding: 0;
     margin: 0 auto;
+    transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.2s linear;
 }
 .box-icon-pen {
     font-size: 30px;
@@ -279,6 +286,7 @@ body {
     border: 1px solid #30a3f0;
     border-radius: 5px;
     padding: 21px 40px 19px 39px;
+    transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.2s linear 0.2s;
 }
 .btn-blue:hover {
     color: #30a3f0;
@@ -310,6 +318,7 @@ body {
     flex-basis: 20%;
     position: relative;
     height: 350px;
+    transition: background-color 0.5s linear;
 }
 .photo-item img {
     width: 100%; 
@@ -319,7 +328,6 @@ body {
     object-fit: cover;
     transform: translate(-50%, -50%);
     height: 350px;
-     /*  чтобы картинки сдвигались пропорционально нужно поставить 100%*/
     z-index: -1;
 }
 .photo-text {
@@ -359,13 +367,15 @@ body {
     padding: 22px 22px 22px 22px;
     border-right: 1px solid #30a3f0;
     background-color: #ffffff;
+    transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .photo-btn-link {
     font-size: 16px;
     color: #222222;
     font-weight: 400;
     text-decoration: none;
-    cursor: default
+    cursor: default;
+    transition: color 0.2s linear 0.2s;
 }
 .fa-link {
     transform: scale(1, -1);
@@ -412,6 +422,7 @@ body {
     text-align: center;
     line-height: 95px;
     margin: initial;
+    transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.7s linear;
 }
 .grid-text {
     flex-basis: calc(100% - 95px);
@@ -432,4 +443,23 @@ body {
 .grid-item:hover .grid-icon {
     background-image: url(../img/grid-blue.png);
     color: #ffffff;
+}
+.page-bg2 {
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    padding-top: 108px;
+    padding-bottom: 111px;
+}
+.page-bg2 .title p:first-child {
+    margin: 0 auto 25px;
+}
+.page-bg2 .element-top {
+    margin-top: 0px;
+    margin-bottom: 38px;
+}
+.page-bg2 .btn {
+    margin: 32px auto 35px;
+}
+.page-bg2 .element-bottom {
+    margin: 0 auto;
 }
