@@ -183,6 +183,7 @@ body {
     background-image: url(../img/grey.png);
     background-position: center center;
     background-repeat: no-repeat;
+    padding: 0;
     margin: 0 auto;
 }
 .box-icon-pen {
@@ -321,9 +322,6 @@ body {
      /*  чтобы картинки сдвигались пропорционально нужно поставить 100%*/
     z-index: -1;
 }
-.photo-active {
-    display: none;
-}
 .photo-text {
     position: absolute;
     text-align: center;
@@ -367,6 +365,7 @@ body {
     color: #222222;
     font-weight: 400;
     text-decoration: none;
+    cursor: default
 }
 .fa-link {
     transform: scale(1, -1);
@@ -384,5 +383,53 @@ body {
     background-color: #30a3f0;
 }
 .photo-btn-item:hover .photo-btn-link {
+    color: #ffffff;
+}
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 110px 52px;
+    margin-top: 126px;
+    margin-bottom: 124px;
+}
+.grid-item {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+ }
+.grid-icon {
+    width: 95px;
+    height: 95px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 95px;
+    color: #c9c9c9;
+    background-image: url(../img/grey.png);
+    background-size: 95px 95px; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-basis: 95px;
+    text-align: center;
+    line-height: 95px;
+    margin: initial;
+}
+.grid-text {
+    flex-basis: calc(100% - 95px);
+}
+.grid-text h2 {
+    color: #222222;
+    font-family: "Raleway - Semi Bold";
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-left: 30px;
+}
+.grid-text .description {
+    margin-bottom: 0;  
+    padding-left: 30px;  
+}
+.grid-item:hover .grid-icon {
+    background-image: url(../img/grid-blue.png);
     color: #ffffff;
 }
