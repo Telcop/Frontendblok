@@ -246,7 +246,8 @@ p.center {
     margin-top: 0;
     margin-bottom: 40px;
 }
-.page-grey .description {
+.page-grey .description,
+.page-team .description {
     max-width: 676px;
     margin: 0 auto;
 }
@@ -431,7 +432,7 @@ p.center {
     color: #222222;
     font-family: "Raleway - Semi Bold";
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 20px;
     margin-top: 0;
     padding-left: 30px;
@@ -462,4 +463,91 @@ p.center {
 }
 .page-bg2 .element-bottom {
     margin: 0 auto;
+}
+.page-team {
+    padding-top: 100px;
+    padding-bottom: 58px;
+}
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 117px;
+}
+.team-item {
+    flex-basis: 32%;
+}
+.team-thump {
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 370px;
+    transition: background-color 0.5s linear;
+}
+.team-thump img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 370px;
+    z-index: -1;
+}
+.team-item:hover .team-thump {
+    background-color: transparent;
+}
+.team-position {
+    color: #30a3f0;
+    font-size: 14px;
+    margin-top: 41px;
+    margin-bottom: 13px; 
+}
+.team-name {
+    color: #222222;
+    font-family: "Raleway - Semi Bold";
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+.team-description {
+    line-height: 26.06px;
+    color: #707070;
+    margin-top: 13px;
+    margin-bottom: 24px; 
+    padding: 0 27px;
+}
+.team-social {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.team-social-item {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/grey.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    margin: 0 5px;
+}
+.team-social-item > a {
+    color: #c9c9c9;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin: initial;
+    text-align: center;
+    line-height: 40px;
+    transition: color 0.7s linear;
+}
+.team-social-item:hover > a {
+    color: #ffffff;
+}
+.team-social-item:hover {
+    background-image: url(../img/grid-blue.png);
 }
