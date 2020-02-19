@@ -9,6 +9,7 @@ body {
     padding-top: 30px;
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
+    background-position: center;
 }
 .wrapper {
     width: 100%;
@@ -247,8 +248,9 @@ p.center {
     margin-bottom: 40px;
 }
 .page-grey .description,
-.page-team .description {
-    max-width: 676px;
+.page-team .description,
+.page-grey-screen .description{
+    max-width: 681px;
     margin: 0 auto;
 }
 .list-description {
@@ -448,6 +450,7 @@ p.center {
 .page-bg2 {
     background-image: url(../img/bg2.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     padding-top: 108px;
     padding-bottom: 111px;
 }
@@ -550,4 +553,43 @@ p.center {
 }
 .team-social-item:hover {
     background-image: url(../img/grid-blue.png);
+}
+.page-grey-screen {
+    background-color: #fafafa;
+    padding-top: 101px;
+    padding-bottom: 0px;
+}
+.screen {
+    margin-top: 58px;
+}
+.page-stat {
+    background-color: #000000;
+    padding-top: 118px;
+    padding-bottom: 115px;
+}
+.box-stat {
+    display: flex;
+    justify-content: space-around;
+}
+.box-stat-item svg {
+    color: #30a3f0;
+    font-size: 60px;
+    font-weight: 400;
+}
+.box-stat-item h3{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.box-stat-item span {
+    display: block;
+    color: #707070;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: initial;
+    margin-top: 37px;
+    margin-bottom: 30px;
 }
