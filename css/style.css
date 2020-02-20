@@ -249,7 +249,8 @@ p.center {
 }
 .page-grey .description,
 .page-team .description,
-.page-grey-screen .description{
+.page-grey-screen .description,
+.page-blog .description{
     max-width: 681px;
     margin: 0 auto;
 }
@@ -453,7 +454,7 @@ p.center {
     background-position: center;
     padding-top: 108px;
     padding-bottom: 111px;
-}
+} 
 .page-bg2 .title p:first-child {
     margin: 0 auto 25px;
 }
@@ -592,4 +593,163 @@ p.center {
     text-transform: initial;
     margin-top: 37px;
     margin-bottom: 30px;
+}
+.page-blog {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.blog {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 30px;
+    margin-top: 59px;
+}
+.blog-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-thumb {
+    flex-basis: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 285px;
+    height: 347px;
+    flex-basis: 285px;
+    transition: background-color 0.5s linear;
+}
+.blog-thumb img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    height: 347px;
+    z-index: -1;    
+}
+.blog-mark {
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    background-image: url(../img/grey.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -22px;
+    top: 39px;
+}
+.thumb-btn {
+    position: absolute;
+    left: calc(50% - 75px);
+    bottom: 23px;
+}
+.thumb-btn button {
+    display: inline-block;
+    padding: 10px 12px 10px 14px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+  /*  width: 60px;
+    height: 30px; */
+}
+.btn-message {
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: #30a3f0;
+}
+.btn-message:hover {
+    border: 1px solid  #ffffff;
+    color: #707070;
+}
+.btn-like {
+    color: #707070;
+    background-color: #ffffff;
+}
+.btn-like:hover {
+    border: 1px solid  #30a3f0;
+    color: #30a3f0;
+}
+.thumb-btn > button > span {
+    padding-left: 8px;
+}
+.blog-eye {
+    display: none;
+    position: absolute;
+    width: 67.5px;
+    height: 60px;
+    left: calc(50% - 34px);
+    top: 144px;
+}
+.blog-eye svg {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;    
+}
+.blog-text {
+    flex-basis: 50%;
+    background-color: #fafafa;
+    height: 347px;
+    text-align: left;
+}
+.blog-text h3{
+    padding-top: 46px;
+    padding-left: 38px;
+    margin: 0;
+    color: #222222;
+    font-family: "Raleway - Semi Bold";
+    font-size: 18px;
+    font-weight: 400;
+}
+.blog-text ul {
+    list-style-type: none;
+    padding-left: 24px;
+    padding-top: 10px;
+    margin: 0;
+    display: flex;
+}
+.blog-text > ul > li {
+    color: #707070;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 14px 0 16px;
+    border-right: 1px solid #707070;
+}
+.blog-text > ul > li:last-child {
+    border-right: none;
+}
+.blog-text > ul > li > a {
+    text-decoration: none;
+    color: #707070;
+}
+.blog-text p {
+    color: #707070;
+    line-height: 26px;
+    padding-top: 30px;
+    padding-left: 38px;
+    padding-right: 39px;
+}
+.blog-text > a {
+    display: block;
+    padding-left: 38px;
+    padding-top: 26px;
+    color: #30a3f0;
+    font-size: 14px;
+    text-decoration: none;
+}
+.blog-text > a > span {
+    padding-right: 8px;
+}
+.blog-item:hover .blog-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.blog-item:hover .blog-eye {
+    display: block;
+}
+.blog-text > ul > li > a:hover {
+    color: #30a3f0;
+}
+.blog-text > a:hover {
+    font-size: 16px;
 }
