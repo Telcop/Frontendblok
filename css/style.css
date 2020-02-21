@@ -753,3 +753,116 @@ p.center {
 .blog-text > a:hover {
     font-size: 16px;
 }
+.page-company {
+    background-color: #fefefe;
+    padding-top: 104px;
+    padding-bottom: 102px;
+}
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.company-item {
+    display: block;
+    background-image: url(../img/company.png);
+    background-repeat: no-repeat;
+    height: 92px;
+}
+.company-one {
+    width: 116px;
+    flex-basis: 116px;
+    background-position: -18px center;
+}
+.company-tow {
+    width: 126px;
+    flex-basis: 126px;
+    background-position: -214px center;
+}
+.company-three {
+    width: 96px;
+    flex-basis: 96px;
+    background-position: -428px center;
+}
+.company-four {
+    width: 122px;
+    flex-basis: 122px;
+    background-position: -616px center;
+}
+.company-five {
+    width: 92px;
+    flex-basis: 92px;
+    background-position: -830px center;
+}
+.company-six {
+    width: 126px;
+    flex-basis: 126px;
+    background-position: -1013px center;
+}
+.arrowup-bg {
+    background-color: #151515;
+}
+.arrowup {
+    display: block;
+    background-color: #1a1a1a;
+    width: 46px;
+    height: 34px;
+    cursor: pointer;
+    margin: 0 auto;
+    color: #707070;
+    font-size: 26px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+.arrowp svg {
+    line-height: 34px;
+    margin: 0 auto;
+}
+.footer-bg {
+    background-color: #1a1a1a;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer > p {
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.3;
+    padding-top: 36px;
+    padding-bottom: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.footer-menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-menu > li {
+    padding-left: 23px;
+    margin-left: 23px;
+    border-left: 1px solid #707070;
+}
+.footer-menu > li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none;
+}
+.footer-menu > li > a {
+    text-decoration: none;
+    color: #707070;
+    opacity: 0.5;
+    font-size: 14px;
+}
+.arrowup:hover {
+    color: #30a3f0;    
+}
+.footer-menu > li > a:hover {
+    color: #30a3f0;
+}
+
