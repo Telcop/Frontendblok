@@ -451,9 +451,7 @@
                 },'slow');
             });
             var w = $(window).width();
-            if (w <= 576) {
                 $('#burg').on('tap click',function(){
-                    // alert('!!!');
                     if ($('.burg-menu').hasClass('none-burg')){
                         $('.burg-menu').removeClass('none-burg');
                         $('.burg-menu').addClass('active-burg');
@@ -462,7 +460,6 @@
                         $('.burg-menu').addClass('none-burg');
                     }
                 });
-            }
         });
     </script>
 </body>

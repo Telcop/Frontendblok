@@ -419,7 +419,7 @@ p.center {
 .photo-btn-item {
     flex-basis: 50%;   
     padding: 22px 22px 22px 22px;
-    border-right: 1px solid #30a3f0;
+    border-right: 1px solid #c9c9c9;
     background-color: #ffffff;
     transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -476,7 +476,7 @@ p.center {
     text-align: center;
     line-height: 95px;
     margin: initial;
-    transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.7s linear;
+    /*transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.7s linear;*/
 }
 .grid-text {
     flex-basis: calc(100% - 95px);
@@ -587,7 +587,7 @@ p.center {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    /*transition: background-color 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);*/
     margin: 0 5px;
 }
 .team-social-item > a {
@@ -598,7 +598,7 @@ p.center {
     margin: initial;
     text-align: center;
     line-height: 40px;
-    transition: color 0.7s linear;
+    /*transition: color 0.7s linear;*/
 }
 .team-social-item:hover > a {
     color: #ffffff;
@@ -614,6 +614,7 @@ p.center {
 .screen {
     margin-top: 54px;
     width: 100%;
+    margin-bottom: -2px;
 }
 .page-stat {
     background-color: #000000;
