@@ -26,6 +26,7 @@
                     </ul>
                 </div>
                 <div class="head"> 
+                    <div id="burg" class="nav-burg"><i class="fas fa-bars"></i></div>
                     <img class="logo" src="img/logo-main.svg" alt="Logo">
                     <nav>
                         <ul class="nav">
@@ -42,6 +43,16 @@
                         </ul>
                     </nav>
                 </div>
+                <ul class="burg-menu none-burg">
+                    <li><a href="">Home</a></li> 
+                    <li><a href="">Page</a></li>
+                    <li><a href="">Prtofolio</a></li>
+                    <li><a href="">Blog</a></li>
+                    <Li><a href="">Shop</a></Li>
+                    <li><a href="">Shortcodes</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
                 <div class="title center">
                     <div class="element element-top"></div>
                     <p>Quickly Setup Your Website</p>
@@ -239,36 +250,42 @@
             <div class="team">
                 <div class="team-item">
                     <div class="team-thump"><img src="img/imgface1.png" alt="Justin Doe"></div>
-                    <p class="team-position">(Sr. Advisor)</p>
-                    <p class="team-name">Justin Doe</p>
-                    <p class="team-description">People who already have strong trust relships with you. akshay hello world.</p>
-                    <ul class="team-social">
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
+                    <div class="team-text">
+                        <p class="team-position">(Sr. Advisor)</p>
+                        <p class="team-name">Justin Doe</p>
+                        <p class="team-description">People who already have strong trust relships with you. akshay hello world.</p>
+                        <ul class="team-social">
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="team-item">
                     <div class="team-thump"><img src="img/imgface2.png" alt="Dia Josaf"></div>
-                    <p class="team-position">(Sr. Advisor)</p>
-                    <p class="team-name">Dia Josaf</p>
-                    <p class="team-description">People who already have strong trust relships with you. akshay hello world.</p>
-                    <ul class="team-social">
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
+                    <div class="team-text">
+                        <p class="team-position">(Sr. Advisor)</p>
+                        <p class="team-name">Dia Josaf</p>
+                        <p class="team-description">People who already have strong trust relships with you. akshay hello world.</p>
+                        <ul class="team-social">
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="team-item">
                     <div class="team-thump"><img src="img/imgface3.png" alt="Martin Gips"></div>
-                    <p class="team-position">(Sr. Advisor)</p>
-                    <p class="team-name">Martin Gips</p>
-                    <p class="team-description">People who already have strong trust relships with you. akshay hello world.</p>
-                    <ul class="team-social">
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
+                    <div class="team-text">
+                        <p class="team-position">(Sr. Advisor)</p>
+                        <p class="team-name">Martin Gips</p>
+                        <p class="team-description">People who already have strong trust relships with you. akshay hello world.</p>
+                        <ul class="team-social">
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="team-social-item"><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,10 +444,25 @@
     <script src="js/all.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
-        $('#arrowup').click(function(){
-            $('html').animate({
-                scrollTop: 0
-            },'slow');
+        $( document ).ready(function(){
+            $('#arrowup').click(function(){
+                $('html').animate({
+                    scrollTop: 0
+                },'slow');
+            });
+            var w = $(window).width();
+            if (w <= 576) {
+                $('#burg').on('tap click',function(){
+                    // alert('!!!');
+                    if ($('.burg-menu').hasClass('none-burg')){
+                        $('.burg-menu').removeClass('none-burg');
+                        $('.burg-menu').addClass('active-burg');
+                    }else{
+                        $('.burg-menu').removeClass('active-burg');
+                        $('.burg-menu').addClass('none-burg');
+                    }
+                });
+            }
         });
     </script>
 </body>
